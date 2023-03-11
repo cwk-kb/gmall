@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.citycloud.gmall.user.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.citycloud.gmall.user.dto.UserDo">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+        <result property="balance" column="balance" jdbcType="DOUBLE"/>
+        <result property="createName" column="create_name" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIME"/>
+        <result property="updateName" column="update_name" jdbcType="VARCHAR"/>
+        <result property="updateTime" column="update_time" jdbcType="TIME"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_name,balance,
+        create_name,create_time,update_name,
+        update_time
+    </sql>
+</mapper>
